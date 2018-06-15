@@ -1,0 +1,22 @@
+.parent{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14pt;
+    padding-bottom: 50px;
+}
+
+.parent button{
+    background-color: #f2f5f8;
+    border-style: solid;
+    border: 2px solid #afafaf;
+    color: black;
+    padding: 15px 32px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+}
+
+.parent button:hover{
+    background-color: #afafaf;
+    color: #f2f5f8;
+}

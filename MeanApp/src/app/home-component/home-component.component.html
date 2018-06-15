@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+  <div class="parent">
+    <a [routerLink]="['create']">Add a pet to the shelter</a>
+    <h2> Help our pets find a home </h2>
+    <table>
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+    
+          <tr *ngFor = "let pet of pets">
+              <td>{{pet.name}}</td>
+              <td>{{pet.type}}</td>
+              <td>
+                  <button [routerLink]="['/angshowdetail', pet._id]">Details</button>
+                  <button [routerLink]="['/angupdate', pet._id]">Edit</button>
+              </td>
+            
+          </tr>
+        
+      </tbody>
+    </table>
+    <p *ngIf="error">{{error}}</p>
+  </div>
+
+</body>
+</html>

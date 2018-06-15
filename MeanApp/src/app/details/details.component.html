@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>Pet Details</title>
+    </head>
+    <body>
+      <div class="parent">
+        <button [routerLink]="['/']">Home </button>
+
+        <h3>Details about {{pet?.name}}</h3>
+
+        <p>Pet type: {{pet?.type}}</p>
+
+        <p>Description: {{pet?.desc}}</p>
+
+        <h3 class="skillheader"> Skills </h3>
+        <br>
+        <p>Skill1: {{pet?.skill1}}</p>
+        <p>Skill2: {{pet?.skill2}}</p>
+        <p>Skill3: {{pet?.skill3}}</p>
+        <p>Likes:{{pet?.likes}}</p>
+
+        <button (click)="incrementlike(pet, id)">Add a Like</button>
+        <button (click)="removepet(pet)">Adopt this Pet!</button>
+
+        <p *ngIf="error">{{error}}</p>
+      </div>
+    
+    </body>
+</html>

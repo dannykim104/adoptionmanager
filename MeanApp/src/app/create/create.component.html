@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Add Pet Data</title>
+</head>
+<body>
+    <div class="parent">
+    <form (submit)="onSubmit()">
+
+        <strong>Pet name:</strong>
+        <input type="text" name="name" [(ngModel)]="newPet.name"/>
+        <br>
+        <strong>Pet type:</strong>
+        <input type="text" class="inputchange" name="cuisine" [(ngModel)]="newPet.type"/>
+        <br>
+        <strong> Description: </strong>
+        <input type="text" class="inputchange" name="description" [(ngModel)]="newPet.desc"/>
+        <br>
+        <h2>Skills:</h2>
+        <strong> Skill 1:</strong> 
+        <input type="text" name="skill1" [(ngModel)]="newPet.skill1"/>
+        <br>
+        <strong>Skill 2:</strong> 
+        <input type="text" class="inputchange" name="skill2" [(ngModel)]="newPet.skill2"/>
+        <br>
+        <strong>Skill 3:</strong> 
+        <input type="text" class="inputchange" name="skill3" [(ngModel)]="newPet.skill3"/>
+        <br>
+        <input class="submitbutton" type="submit" value="Register" />
+    </form>
+    <button class="cancelbutton" [routerLink]="['/']">Cancel </button>
+    <p *ngIf="error">{{error}}</p>
+    </div>
+
+</body>
+</html>

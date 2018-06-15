@@ -1,0 +1,40 @@
+.parent{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.parent table{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.parent a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.parent a:hover{
+    color: lightblue;
+}
+
+.parent td{
+    padding-top: 10px;
+}
+
+.parent button{
+    background-color: #f2f5f8;
+    border-style: solid;
+    border: 2px solid #afafaf;
+    color: black;
+    padding: 15px 32px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+}
+
+.parent button:hover{
+    background-color: #afafaf;
+    color: #f2f5f8;
+}

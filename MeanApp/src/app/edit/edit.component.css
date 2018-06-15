@@ -1,0 +1,40 @@
+.parent{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.inputchange{
+    margin-top: 20px;
+}
+
+.cancelbutton{
+    margin-top: 15px;
+    background-color: #f2f5f8;
+    border-style: solid;
+    border: 2px solid #afafaf;
+    color: black;
+    padding: 15px 32px;
+    margin-top: 25px;
+}
+
+.cancelbutton:hover{
+    background-color: #afafaf;
+    color: #f2f5f8;
+}
+
+.editbutton{
+    background-color: #f2f5f8;
+    border-style: solid;
+    border: 2px solid #afafaf;
+    color: black;
+    padding: 15px 32px;
+    margin-top: 25px;
+    
+}
+
+.editbutton:hover{
+    background-color: #afafaf;
+    color: #f2f5f8;
+}
+
